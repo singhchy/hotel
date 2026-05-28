@@ -26,6 +26,7 @@
   const galleryFilters = document.querySelectorAll('.gallery__filter');
   const galleryItems = document.querySelectorAll('.gallery__item');
   const heroParallax = document.querySelector('.hero__parallax');
+  let lenis = null;
 
   /* ============================================================
      PREFERS REDUCED MOTION CHECK
@@ -630,13 +631,45 @@
           const targetPosition =
             target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
 
-          window.scrollTo({
-            top: targetPosition,
-            behavior: prefersReducedMotion ? 'auto' : 'smooth',
-          });
+          if (lenis && !prefersReducedMotion) {
+            lenis.scrollTo(target, {
+              offset: -navbarHeight,
+              duration: 1.2
+            });
+          } else {
+            window.scrollTo({
+              top: targetPosition,
+              behavior: prefersReducedMotion ? 'auto' : 'smooth',
+            });
+          }
         }
       });
     });
+  }
+
+  /* ============================================================
+     13. LENIS SMOOTH SCROLLING
+     ============================================================ */
+  function initSmoothScroll() {
+    if (prefersReducedMotion || typeof Lenis === 'undefined') return;
+
+    lenis = new Lenis({
+      duration: 1.2,
+      easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      smoothTouch: false,
+    });
+
+    document.documentElement.classList.add('lenis', 'lenis-smooth');
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
   }
 
   /* ============================================================
@@ -672,6 +705,7 @@
      ============================================================ */
   function init() {
     createOverlay();
+    initSmoothScroll();
     handleNavbarScroll();
     updateActiveNavLink();
     initScrollReveal();
