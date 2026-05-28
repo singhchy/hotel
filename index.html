@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Auberge Céleste — Luxury boutique hotel offering world-class suites, fine dining, spa wellness, and curated experiences. Book your stay in elegance.">
-  <meta name="keywords" content="luxury hotel, boutique hotel, fine dining, spa, suites, Auberge Céleste, premium accommodation">
+  <meta name="description"
+    content="Auberge Céleste — Luxury boutique hotel offering world-class suites, fine dining, spa wellness, and curated experiences. Book your stay in elegance.">
+  <meta name="keywords"
+    content="luxury hotel, boutique hotel, fine dining, spa, suites, Auberge Céleste, premium accommodation">
   <meta name="author" content="Auberge Céleste">
   <meta name="theme-color" content="#1E1E1E">
   <meta property="og:title" content="Auberge Céleste — Luxury Boutique Hotel">
-  <meta property="og:description" content="Experience timeless elegance, world-class service, and curated luxury. Book your extraordinary stay.">
+  <meta property="og:description"
+    content="Experience timeless elegance, world-class service, and curated luxury. Book your extraordinary stay.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="img/og-image.jpg">
   <title>Auberge Céleste — Luxury Boutique Hotel & Resort</title>
@@ -16,7 +20,9 @@
   <!-- Preload Critical Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+    rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -42,6 +48,7 @@
   }
   </script>
 </head>
+
 <body class="page--home">
 
   <!-- Skip Navigation Link -->
@@ -70,7 +77,8 @@
 
       <div class="navbar__actions">
         <a href="#booking" class="btn btn--gold btn--sm navbar__cta">Book Now</a>
-        <button class="navbar__hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <button class="navbar__hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="nav-menu">
           <span class="navbar__hamburger-line"></span>
           <span class="navbar__hamburger-line"></span>
           <span class="navbar__hamburger-line"></span>
@@ -84,13 +92,24 @@
     <!-- ===== 2. HERO SECTION ===== -->
     <section class="hero" id="hero" aria-labelledby="hero-heading">
       <div class="hero__bg">
-        <div class="hero__overlay"></div>
         <div class="hero__parallax" aria-hidden="true"></div>
+        <video class="hero__bg-video" autoplay loop muted playsinline aria-hidden="true">
+          <source src="video/hero-bg.mp4" type="video/mp4">
+          <source src="./assets/hero-video.mp4" type="video/mp4">
+          <source src="https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_30fps.mp4" type="video/mp4">
+          <source
+            src="https://assets.mixkit.co/videos/preview/mixkit-luxury-resort-with-swimming-pool-and-palm-trees-41481-large.mp4"
+            type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
       </div>
       <div class="hero__content">
         <p class="hero__tagline reveal reveal--fade-up">Welcome to Auberge Céleste</p>
-        <h1 class="hero__heading reveal reveal--fade-up" id="hero-heading">Where Timeless Elegance <br>Meets Serene Luxury</h1>
-        <p class="hero__desc reveal reveal--fade-up">A sanctuary of refined comfort nestled in the heart of Paris. Experience world-class hospitality, <br class="hero__desc-br">curated experiences, and the art of fine living.</p>
+        <h1 class="hero__heading reveal reveal--fade-up" id="hero-heading">Where Timeless Elegance <br>Meets Serene
+          Luxury</h1>
+        <p class="hero__desc reveal reveal--fade-up">A sanctuary of refined comfort nestled in the heart of Paris.
+          Experience world-class hospitality, <br class="hero__desc-br">curated experiences, and the art of fine living.
+        </p>
         <div class="hero__ctas reveal reveal--fade-up">
           <a href="#booking" class="btn btn--gold btn--lg hero__cta-primary">Book Your Stay</a>
           <a href="#rooms" class="btn btn--outline btn--lg hero__cta-secondary">Explore Rooms</a>
@@ -113,13 +132,15 @@
           <div class="booking__field">
             <label for="checkin" class="booking__label">Check-in</label>
             <div class="booking__input-wrap">
-              <input type="date" id="checkin" name="checkin" class="booking__input" required aria-required="true" min="">
+              <input type="date" id="checkin" name="checkin" class="booking__input" required aria-required="true"
+                min="">
             </div>
           </div>
           <div class="booking__field">
             <label for="checkout" class="booking__label">Check-out</label>
             <div class="booking__input-wrap">
-              <input type="date" id="checkout" name="checkout" class="booking__input" required aria-required="true" min="">
+              <input type="date" id="checkout" name="checkout" class="booking__input" required aria-required="true"
+                min="">
             </div>
           </div>
           <div class="booking__field">
@@ -165,14 +186,19 @@
         <div class="section-header reveal reveal--fade-up">
           <span class="section-header__tag">Accommodations</span>
           <h2 class="section-header__heading" id="rooms-heading">Rooms & Suites</h2>
-          <p class="section-header__desc">Thoughtfully designed spaces that blend classic Parisian elegance with modern comfort. Each room tells its own story.</p>
+          <p class="section-header__desc">Thoughtfully designed spaces that blend classic Parisian elegance with modern
+            comfort. Each room tells its own story.</p>
         </div>
 
         <div class="rooms__grid">
           <!-- Room Card 1 -->
           <article class="room-card reveal reveal--fade-up" tabindex="0" aria-labelledby="room-name-1">
             <div class="room-card__img-wrap">
-              <div class="room-card__img-placeholder" role="img" aria-label="Deluxe Room with king bed and Parisian city view"></div>
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80"
+                alt="Deluxe Room" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+              <div class="room-card__img-placeholder" role="img"
+                aria-label="Deluxe Room with king bed and Parisian city view"
+                style="mix-blend-mode: multiply; opacity: 0.6;"></div>
               <span class="room-card__badge">Most Popular</span>
             </div>
             <div class="room-card__body">
@@ -201,11 +227,16 @@
           <!-- Room Card 2 -->
           <article class="room-card reveal reveal--fade-up" tabindex="0" aria-labelledby="room-name-2">
             <div class="room-card__img-wrap">
-              <div class="room-card__img-placeholder room-card__img-placeholder--2" role="img" aria-label="Premier Suite with separate living area and garden terrace"></div>
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+                alt="Premier Suite" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+              <div class="room-card__img-placeholder" role="img"
+                aria-label="Premier Suite with separate living area and garden terrace"
+                style="mix-blend-mode: multiply; opacity: 0.6;"></div>
             </div>
             <div class="room-card__body">
               <h3 class="room-card__name" id="room-name-2">Premier Suite</h3>
-              <p class="room-card__desc">Spacious 65m² suite with separate living area, walk-in closet, and private garden terrace.</p>
+              <p class="room-card__desc">Spacious 65m² suite with separate living area, walk-in closet, and private
+                garden terrace.</p>
               <div class="room-card__amenities">
                 <span class="room-card__amenity" title="King Bed">&#9733; King Bed</span>
                 <span class="room-card__amenity" title="Terrace">&#9733; Terrace</span>
@@ -229,12 +260,17 @@
           <!-- Room Card 3 -->
           <article class="room-card reveal reveal--fade-up" tabindex="0" aria-labelledby="room-name-3">
             <div class="room-card__img-wrap">
-              <div class="room-card__img-placeholder room-card__img-placeholder--3" role="img" aria-label="Signature Suite with private plunge pool and panoramic skyline views"></div>
+              <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80"
+                alt="Signature Suite" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+              <div class="room-card__img-placeholder" role="img"
+                aria-label="Signature Suite with private plunge pool and panoramic skyline views"
+                style="mix-blend-mode: multiply; opacity: 0.6;"></div>
               <span class="room-card__badge room-card__badge--luxury">Luxury</span>
             </div>
             <div class="room-card__body">
               <h3 class="room-card__name" id="room-name-3">Signature Suite</h3>
-              <p class="room-card__desc">Stunning 95m² corner suite with private plunge pool, grand piano, and sweeping skyline views.</p>
+              <p class="room-card__desc">Stunning 95m² corner suite with private plunge pool, grand piano, and sweeping
+                skyline views.</p>
               <div class="room-card__amenities">
                 <span class="room-card__amenity" title="King Bed">&#9733; King Bed</span>
                 <span class="room-card__amenity" title="Pool">&#9733; Pool</span>
@@ -264,54 +300,58 @@
         <div class="section-header reveal reveal--fade-up">
           <span class="section-header__tag">Indulge & Unwind</span>
           <h2 class="section-header__heading" id="amenities-heading">World-Class Amenities</h2>
-          <p class="section-header__desc">Every detail curated to elevate your stay into an unforgettable experience of comfort and luxury.</p>
+          <p class="section-header__desc">Every detail curated to elevate your stay into an unforgettable experience of
+            comfort and luxury.</p>
         </div>
 
         <div class="amenities__grid">
           <div class="amenity-card reveal reveal--fade-up" tabindex="0">
-            <div class="amenity-card__icon">&#9733;</div>
-            <h3 class="amenity-card__title">Infinity Pool</h3>
-            <p class="amenity-card__desc">Rooftop heated infinity pool with panoramic Paris skyline views and private cabana service.</p>
+            <div class="amenity-card__icon">&#9829;</div>
+            <p class="amenity-card__desc">Rooftop heated infinity pool with panoramic Paris skyline views and private
+              cabana service.</p>
           </div>
           <div class="amenity-card reveal reveal--fade-up" tabindex="0">
             <div class="amenity-card__icon">&#10087;</div>
             <h3 class="amenity-card__title">Spa & Wellness</h3>
-            <p class="amenity-card__desc">Award-winning spa with holistic treatments, sauna, steam rooms, and private therapy suites.</p>
+            <p class="amenity-card__desc">Award-winning spa with holistic treatments, sauna, steam rooms, and private
+              therapy suites.</p>
           </div>
           <div class="amenity-card reveal reveal--fade-up" tabindex="0">
             <div class="amenity-card__icon">&#9832;</div>
             <h3 class="amenity-card__title">Fine Dining</h3>
-            <p class="amenity-card__desc">Two Michelin-starred restaurants curated by world-renowned chefs offering gastronomic excellence.</p>
+            <p class="amenity-card__desc">Two Michelin-starred restaurants curated by world-renowned chefs offering
+              gastronomic excellence.</p>
           </div>
           <div class="amenity-card reveal reveal--fade-up" tabindex="0">
-            <div class="amenity-card__icon">&#9733;</div>
-            <h3 class="amenity-card__title">Conference Hall</h3>
-            <p class="amenity-card__desc">State-of-the-art 300-seat conference center with premium AV equipment and dedicated event planners.</p>
+            <div class="amenity-card__icon">&#10070;</div>
+            <p class="amenity-card__desc">State-of-the-art 300-seat conference center with premium AV equipment and
+              dedicated event planners.</p>
           </div>
           <div class="amenity-card reveal reveal--fade-up" tabindex="0">
-            <div class="amenity-card__icon">&#9876;</div>
-            <h3 class="amenity-card__title">Fitness Center</h3>
-            <p class="amenity-card__desc">24/7 premium gym with Technogym equipment, personal trainers, yoga studio, and pilates room.</p>
+            <div class="amenity-card__icon">&#9889;</div>
+            <p class="amenity-card__desc">24/7 premium gym with Technogym equipment, personal trainers, yoga studio, and
+              pilates room.</p>
           </div>
           <div class="amenity-card reveal reveal--fade-up" tabindex="0">
             <div class="amenity-card__icon">&#9992;</div>
             <h3 class="amenity-card__title">Airport Pickup</h3>
-            <p class="amenity-card__desc">Chauffeur-driven luxury sedans and private helicopter transfers from all major Paris airports.</p>
+            <p class="amenity-card__desc">Chauffeur-driven luxury sedans and private helicopter transfers from all major
+              Paris airports.</p>
           </div>
           <div class="amenity-card reveal reveal--fade-up" tabindex="0">
-            <div class="amenity-card__icon">&#9733;</div>
-            <h3 class="amenity-card__title">Free WiFi</h3>
-            <p class="amenity-card__desc">High-speed fiber internet throughout the property, with dedicated business-grade connections in suites.</p>
+            <div class="amenity-card__icon">&#9678;</div>
+            <p class="amenity-card__desc">High-speed fiber internet throughout the property, with dedicated
+              business-grade connections in suites.</p>
           </div>
           <div class="amenity-card reveal reveal--fade-up" tabindex="0">
-            <div class="amenity-card__icon">&#9728;</div>
-            <h3 class="amenity-card__title">Smart Rooms</h3>
-            <p class="amenity-card__desc">AI-powered room automation with voice controls, mood lighting, climate zones, and smart entertainment.</p>
+            <div class="amenity-card__icon">&#9881;</div>
+            <p class="amenity-card__desc">AI-powered room automation with voice controls, mood lighting, climate zones,
+              and smart entertainment.</p>
           </div>
           <div class="amenity-card reveal reveal--fade-up" tabindex="0">
-            <div class="amenity-card__icon">&#9788;</div>
-            <h3 class="amenity-card__title">Concierge</h3>
-            <p class="amenity-card__desc">Dedicated 24/7 concierge team arranging exclusive experiences, reservations, and personalized itineraries.</p>
+            <div class="amenity-card__icon">&#9819;</div>
+            <p class="amenity-card__desc">Dedicated 24/7 concierge team arranging exclusive experiences, reservations,
+              and personalized itineraries.</p>
           </div>
         </div>
       </div>
@@ -323,50 +363,70 @@
         <div class="section-header reveal reveal--fade-up">
           <span class="section-header__tag">Curated Moments</span>
           <h2 class="section-header__heading" id="experiences-heading">Extraordinary Experiences</h2>
-          <p class="section-header__desc">Immerse yourself in an array of curated journeys that capture the essence of Parisian luxury and culture.</p>
+          <p class="section-header__desc">Immerse yourself in an array of curated journeys that capture the essence of
+            Parisian luxury and culture.</p>
         </div>
 
         <div class="experiences__layout">
           <div class="experience-card experience-card--large reveal reveal--fade-up">
             <div class="experience-card__img-placeholder" role="img" aria-label="Private Louvre tour at sunrise"></div>
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80"
+              alt="Private Louvre Sunrise Tour"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
             <div class="experience-card__overlay"></div>
             <div class="experience-card__content">
               <span class="experience-card__category">Cultural</span>
               <h3 class="experience-card__title">Private Louvre Sunrise Tour</h3>
-              <p class="experience-card__desc">Experience the world's greatest museum in complete solitude before doors open to the public.</p>
+              <p class="experience-card__desc">Experience the world's greatest museum in complete solitude before doors
+                open to the public.</p>
               <a href="#" class="experience-card__link">Discover More &rarr;</a>
             </div>
           </div>
 
           <div class="experience-card reveal reveal--fade-up">
-            <div class="experience-card__img-placeholder experience-card__img-placeholder--2" role="img" aria-label="Champagne hot air balloon over vineyards"></div>
+            <div class="experience-card__img-placeholder experience-card__img-placeholder--2" role="img"
+              aria-label="Champagne hot air balloon over vineyards"></div>
+            <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&w=800&q=80"
+              alt="Champagne Balloon Flight"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
             <div class="experience-card__overlay"></div>
             <div class="experience-card__content">
               <span class="experience-card__category">Adventure</span>
               <h3 class="experience-card__title">Champagne Balloon Flight</h3>
-              <p class="experience-card__desc">Soar over the rolling vineyards of Champagne at sunrise with a private sommelier.</p>
+              <p class="experience-card__desc">Soar over the rolling vineyards of Champagne at sunrise with a private
+                sommelier.</p>
               <a href="#" class="experience-card__link">Discover More &rarr;</a>
             </div>
           </div>
 
           <div class="experience-card reveal reveal--fade-up">
-            <div class="experience-card__img-placeholder experience-card__img-placeholder--3" role="img" aria-label="Michelin chef's table dining experience"></div>
+            <div class="experience-card__img-placeholder experience-card__img-placeholder--3" role="img"
+              aria-label="Michelin chef's table dining experience"></div>
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+              alt="Chef's Table Gastronomique"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
             <div class="experience-card__overlay"></div>
             <div class="experience-card__content">
               <span class="experience-card__category">Dining</span>
               <h3 class="experience-card__title">Chef's Table Gastronomique</h3>
-              <p class="experience-card__desc">An intimate 8-course tasting menu crafted tableside by our Michelin-starred chef.</p>
+              <p class="experience-card__desc">An intimate 8-course tasting menu crafted tableside by our
+                Michelin-starred chef.</p>
               <a href="#" class="experience-card__link">Discover More &rarr;</a>
             </div>
           </div>
 
-          <div class="experience-card reveal reveal--fade-up">
-            <div class="experience-card__img-placeholder experience-card__img-placeholder--4" role="img" aria-label="Elegant wedding setup in hotel gardens"></div>
+          <div class="experience-card reveal reveal--fade-up" style="grid-column: 1 / -1; aspect-ratio: 21 / 9;">
+            <div class="experience-card__img-placeholder experience-card__img-placeholder--4" role="img"
+              aria-label="Elegant wedding setup in hotel gardens"></div>
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80"
+              alt="Garden Weddings & Galas"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
             <div class="experience-card__overlay"></div>
             <div class="experience-card__content">
               <span class="experience-card__category">Events</span>
               <h3 class="experience-card__title">Garden Weddings & Galas</h3>
-              <p class="experience-card__desc">Host your most cherished celebrations in our exquisitely manicured private gardens.</p>
+              <p class="experience-card__desc">Host your most cherished celebrations in our exquisitely manicured
+                private gardens.</p>
               <a href="#" class="experience-card__link">Discover More &rarr;</a>
             </div>
           </div>
@@ -381,7 +441,9 @@
           <span class="section-header__tag section-header__tag--light">Gastronomy</span>
           <h2 class="dining__heading" id="dining-heading">Le Jardin d'Or</h2>
           <p class="dining__subtitle">Two Michelin Stars &bull; Chef Antoine Moreau</p>
-          <p class="dining__desc">A symphony of French haute cuisine reimagined through a modern lens. Our signature restaurant offers an immersive dining journey where seasonal ingredients meet artistic expression, served in an ambiance of understated opulence overlooking our private gardens.</p>
+          <p class="dining__desc">A symphony of French haute cuisine reimagined through a modern lens. Our signature
+            restaurant offers an immersive dining journey where seasonal ingredients meet artistic expression, served in
+            an ambiance of understated opulence overlooking our private gardens.</p>
           <div class="dining__features">
             <div class="dining__feature">
               <span class="dining__feature-icon">&#9733;</span>
@@ -403,8 +465,15 @@
           <a href="#booking" class="btn btn--gold btn--lg dining__cta">Reserve a Table</a>
         </div>
         <div class="dining__visual reveal reveal--fade-in" aria-hidden="true">
-          <div class="dining__img-placeholder" role="img" aria-label="Elegant fine dining restaurant with chandeliers and garden views"></div>
-          <div class="dining__img-accent"></div>
+          <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=80"
+            alt="Elegant fine dining restaurant"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          <div class="dining__img-placeholder" role="img"
+            aria-label="Elegant fine dining restaurant with chandeliers and garden views"
+            style="mix-blend-mode: multiply; opacity: 0.6;"></div>
+          <div class="dining__img-accent"
+            style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center; z-index: 2; border: none; box-shadow: var(--shadow-lg);">
+          </div>
         </div>
       </div>
     </section>
@@ -415,18 +484,23 @@
         <div class="section-header reveal reveal--fade-up">
           <span class="section-header__tag">Guest Stories</span>
           <h2 class="section-header__heading" id="testimonials-heading">What Our Guests Say</h2>
-          <p class="section-header__desc">Hear from discerning travelers who have experienced the Auberge Céleste difference.</p>
+          <p class="section-header__desc">Hear from discerning travelers who have experienced the Auberge Céleste
+            difference.</p>
         </div>
 
-        <div class="testimonials__carousel" id="testimonials-carousel" aria-label="Guest testimonials carousel" role="region">
+        <div class="testimonials__carousel" id="testimonials-carousel" aria-label="Guest testimonials carousel"
+          role="region">
           <div class="testimonials__track" id="testimonials-track">
             <!-- Testimonial 1 -->
             <article class="testimonial-card reveal reveal--fade-up" aria-label="Testimonial from Sophie Laurent">
               <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span>
+                <span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span
+                  aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span
+                  aria-hidden="true">&#9733;</span>
               </div>
               <blockquote class="testimonial-card__quote">
-                <p>"An absolutely magical stay. The attention to detail is extraordinary — from the hand-written welcome note to the curated pillow menu. Auberge Céleste redefines what luxury hospitality means."</p>
+                <p>"An absolutely magical stay. The attention to detail is extraordinary — from the hand-written welcome
+                  note to the curated pillow menu. Auberge Céleste redefines what luxury hospitality means."</p>
               </blockquote>
               <div class="testimonial-card__author">
                 <div class="testimonial-card__avatar testimonial-card__avatar--1" aria-hidden="true"></div>
@@ -438,12 +512,16 @@
             </article>
 
             <!-- Testimonial 2 -->
-            <article class="testimonial-card reveal reveal--fade-up" aria-label="Testimonial from James & Emily Whitmore">
+            <article class="testimonial-card reveal reveal--fade-up"
+              aria-label="Testimonial from James & Emily Whitmore">
               <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span>
+                <span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span
+                  aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span
+                  aria-hidden="true">&#9733;</span>
               </div>
               <blockquote class="testimonial-card__quote">
-                <p>"We celebrated our anniversary here and it exceeded every expectation. The chef's table experience was transcendent, and the suite with its private terrace was simply breathtaking."</p>
+                <p>"We celebrated our anniversary here and it exceeded every expectation. The chef's table experience
+                  was transcendent, and the suite with its private terrace was simply breathtaking."</p>
               </blockquote>
               <div class="testimonial-card__author">
                 <div class="testimonial-card__avatar testimonial-card__avatar--2" aria-hidden="true"></div>
@@ -457,10 +535,13 @@
             <!-- Testimonial 3 -->
             <article class="testimonial-card reveal reveal--fade-up" aria-label="Testimonial from Kenji Tanaka">
               <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span>
+                <span aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span
+                  aria-hidden="true">&#9733;</span><span aria-hidden="true">&#9733;</span><span
+                  aria-hidden="true">&#9733;</span>
               </div>
               <blockquote class="testimonial-card__quote">
-                <p>"Having stayed at the finest hotels globally, Auberge Céleste stands among the very best. The concierge team orchestrated our week flawlessly — every dinner, every experience, every detail."</p>
+                <p>"Having stayed at the finest hotels globally, Auberge Céleste stands among the very best. The
+                  concierge team orchestrated our week flawlessly — every dinner, every experience, every detail."</p>
               </blockquote>
               <div class="testimonial-card__author">
                 <div class="testimonial-card__avatar testimonial-card__avatar--3" aria-hidden="true"></div>
@@ -473,13 +554,16 @@
           </div>
 
           <div class="testimonials__controls">
-            <button class="testimonials__arrow testimonials__arrow--prev" id="testimonial-prev" aria-label="Previous testimonial">&larr;</button>
+            <button class="testimonials__arrow testimonials__arrow--prev" id="testimonial-prev"
+              aria-label="Previous testimonial">&larr;</button>
             <div class="testimonials__dots" id="testimonial-dots" aria-hidden="true">
-              <button class="testimonials__dot testimonials__dot--active" data-index="0" aria-label="Testimonial 1"></button>
+              <button class="testimonials__dot testimonials__dot--active" data-index="0"
+                aria-label="Testimonial 1"></button>
               <button class="testimonials__dot" data-index="1" aria-label="Testimonial 2"></button>
               <button class="testimonials__dot" data-index="2" aria-label="Testimonial 3"></button>
             </div>
-            <button class="testimonials__arrow testimonials__arrow--next" id="testimonial-next" aria-label="Next testimonial">&rarr;</button>
+            <button class="testimonials__arrow testimonials__arrow--next" id="testimonial-next"
+              aria-label="Next testimonial">&rarr;</button>
           </div>
         </div>
       </div>
@@ -491,9 +575,15 @@
         <div class="section-header reveal reveal--fade-up">
           <span class="section-header__tag">Visual Journey</span>
           <h2 class="section-header__heading" id="gallery-heading">Our Gallery</h2>
-          <p class="section-header__desc">A glimpse into the world of Auberge Céleste — where every corner tells a story of elegance.</p>
+          <p class="section-header__desc">A glimpse into the world of Auberge Céleste — where every corner tells a story
+            of elegance.</p>
         </div>
 
+        <style>
+          .gallery__filter.gallery__filter--active:hover {
+            color: var(--color-warm-white) !important;
+          }
+        </style>
         <div class="gallery__filters reveal reveal--fade-up">
           <button class="gallery__filter gallery__filter--active" data-filter="all">All</button>
           <button class="gallery__filter" data-filter="rooms">Rooms</button>
@@ -503,37 +593,58 @@
         </div>
 
         <div class="gallery__masonry" id="gallery-masonry">
-          <div class="gallery__item gallery__item--tall" data-category="rooms" tabindex="0" role="img" aria-label="Luxury suite with panoramic views">
-            <div class="gallery__img-placeholder gallery__img-placeholder--1"></div>
-            <div class="gallery__item-overlay"><span>Deluxe Suite Interior</span></div>
+          <div class="gallery__item gallery__item--tall" data-category="rooms" tabindex="0" role="img" aria-label="Luxury suite with panoramic views" onfocus="this.querySelector('.gallery__item-overlay').style.opacity='1'" onblur="this.querySelector('.gallery__item-overlay').style.opacity=''">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Deluxe Suite" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+            <div class="gallery__img-placeholder gallery__img-placeholder--1" style="mix-blend-mode: multiply; opacity: 0.6; position:relative; z-index:1;"></div>
+            <div class="gallery__item-overlay" style="z-index:2;"><span>Deluxe Suite Interior</span></div>
           </div>
-          <div class="gallery__item" data-category="dining" tabindex="0" role="img" aria-label="Fine dining restaurant table setting">
-            <div class="gallery__img-placeholder gallery__img-placeholder--2"></div>
-            <div class="gallery__item-overlay"><span>Le Jardin d'Or</span></div>
+          
+          <div class="gallery__item" data-category="dining" tabindex="0" role="img" aria-label="Fine dining restaurant table setting" onfocus="this.querySelector('.gallery__item-overlay').style.opacity='1'" onblur="this.querySelector('.gallery__item-overlay').style.opacity=''">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="Le Jardin d'Or" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+            <div class="gallery__img-placeholder gallery__img-placeholder--2" style="mix-blend-mode: multiply; opacity: 0.6; position:relative; z-index:1;"></div>
+            <div class="gallery__item-overlay" style="z-index:2;"><span>Le Jardin d'Or</span></div>
           </div>
-          <div class="gallery__item gallery__item--wide" data-category="amenities" tabindex="0" role="img" aria-label="Infinity pool at sunset">
-            <div class="gallery__img-placeholder gallery__img-placeholder--3"></div>
-            <div class="gallery__item-overlay"><span>Infinity Pool at Dusk</span></div>
+          
+          <div class="gallery__item gallery__item--wide" data-category="amenities" tabindex="0" role="img" aria-label="Infinity pool at sunset" onfocus="this.querySelector('.gallery__item-overlay').style.opacity='1'" onblur="this.querySelector('.gallery__item-overlay').style.opacity=''">
+            <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1200&q=80" alt="Infinity Pool" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+            <div class="gallery__img-placeholder gallery__img-placeholder--3" style="mix-blend-mode: multiply; opacity: 0.6; position:relative; z-index:1;"></div>
+            <div class="gallery__item-overlay" style="z-index:2;"><span>Infinity Pool at Dusk</span></div>
           </div>
-          <div class="gallery__item" data-category="rooms" tabindex="0" role="img" aria-label="Elegant marble bathroom">
-            <div class="gallery__img-placeholder gallery__img-placeholder--4"></div>
-            <div class="gallery__item-overlay"><span>Marble Bathroom</span></div>
+          
+          <div class="gallery__item gallery__item--square" data-category="rooms" tabindex="0" role="img" aria-label="Elegant marble bathroom" onfocus="this.querySelector('.gallery__item-overlay').style.opacity='1'" onblur="this.querySelector('.gallery__item-overlay').style.opacity=''">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Marble Bathroom" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+            <div class="gallery__img-placeholder gallery__img-placeholder--4" style="mix-blend-mode: multiply; opacity: 0.6; position:relative; z-index:1;"></div>
+            <div class="gallery__item-overlay" style="z-index:2;"><span>Marble Bathroom</span></div>
           </div>
-          <div class="gallery__item" data-category="exterior" tabindex="0" role="img" aria-label="Hotel facade at night">
-            <div class="gallery__img-placeholder gallery__img-placeholder--5"></div>
-            <div class="gallery__item-overlay"><span>Façade by Night</span></div>
+          
+          <div class="gallery__item gallery__item--tall" data-category="exterior" tabindex="0" role="img" aria-label="Hotel facade at night" onfocus="this.querySelector('.gallery__item-overlay').style.opacity='1'" onblur="this.querySelector('.gallery__item-overlay').style.opacity=''">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c0d129df?auto=format&fit=crop&w=800&q=80" alt="Façade by Night" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+            <div class="gallery__img-placeholder gallery__img-placeholder--5" style="mix-blend-mode: multiply; opacity: 0.6; position:relative; z-index:1;"></div>
+            <div class="gallery__item-overlay" style="z-index:2;"><span>Façade by Night</span></div>
           </div>
-          <div class="gallery__item gallery__item--tall" data-category="amenities" tabindex="0" role="img" aria-label="Luxury spa treatment room">
-            <div class="gallery__img-placeholder gallery__img-placeholder--6"></div>
-            <div class="gallery__item-overlay"><span>Spa Sanctuary</span></div>
+          
+          <div class="gallery__item" data-category="amenities" tabindex="0" role="img" aria-label="Luxury spa treatment room" onfocus="this.querySelector('.gallery__item-overlay').style.opacity='1'" onblur="this.querySelector('.gallery__item-overlay').style.opacity=''">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Spa Sanctuary" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+            <div class="gallery__img-placeholder gallery__img-placeholder--6" style="mix-blend-mode: multiply; opacity: 0.6; position:relative; z-index:1;"></div>
+            <div class="gallery__item-overlay" style="z-index:2;"><span>Spa Sanctuary</span></div>
           </div>
-          <div class="gallery__item" data-category="dining" tabindex="0" role="img" aria-label="Rooftop bar with city views">
-            <div class="gallery__img-placeholder gallery__img-placeholder--7"></div>
-            <div class="gallery__item-overlay"><span>Rooftop Bar</span></div>
+          
+          <div class="gallery__item gallery__item--square" data-category="dining" tabindex="0" role="img" aria-label="Rooftop bar with city views" onfocus="this.querySelector('.gallery__item-overlay').style.opacity='1'" onblur="this.querySelector('.gallery__item-overlay').style.opacity=''">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80" alt="Rooftop Bar" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+            <div class="gallery__img-placeholder gallery__img-placeholder--7" style="mix-blend-mode: multiply; opacity: 0.6; position:relative; z-index:1;"></div>
+            <div class="gallery__item-overlay" style="z-index:2;"><span>Rooftop Bar</span></div>
           </div>
-          <div class="gallery__item gallery__item--wide" data-category="exterior" tabindex="0" role="img" aria-label="Private garden terrace">
-            <div class="gallery__img-placeholder gallery__img-placeholder--8"></div>
-            <div class="gallery__item-overlay"><span>Private Gardens</span></div>
+          
+          <div class="gallery__item gallery__item--wide" data-category="exterior" tabindex="0" role="img" aria-label="Private garden terrace" onfocus="this.querySelector('.gallery__item-overlay').style.opacity='1'" onblur="this.querySelector('.gallery__item-overlay').style.opacity=''">
+            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4ee9b?auto=format&fit=crop&w=1200&q=80" alt="Private Gardens" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+            <div class="gallery__img-placeholder gallery__img-placeholder--8" style="mix-blend-mode: multiply; opacity: 0.6; position:relative; z-index:1;"></div>
+            <div class="gallery__item-overlay" style="z-index:2;"><span>Private Gardens</span></div>
+          </div>
+
+          <div class="gallery__item gallery__item--tall" data-category="dining" tabindex="0" role="img" aria-label="Fine Wine Cellar" onfocus="this.querySelector('.gallery__item-overlay').style.opacity='1'" onblur="this.querySelector('.gallery__item-overlay').style.opacity=''">
+            <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=800&q=80" alt="Fine Wine Cellar" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+            <div class="gallery__img-placeholder gallery__img-placeholder--2" style="mix-blend-mode: multiply; opacity: 0.6; position:relative; z-index:1;"></div>
+            <div class="gallery__item-overlay" style="z-index:2;"><span>Fine Wine Cellar</span></div>
           </div>
         </div>
       </div>
@@ -545,46 +656,55 @@
         <div class="section-header reveal reveal--fade-up">
           <span class="section-header__tag">Exclusive Packages</span>
           <h2 class="section-header__heading" id="offers-heading">Special Offers</h2>
-          <p class="section-header__desc">Curated packages designed for unforgettable stays and cherished celebrations.</p>
+          <p class="section-header__desc">Curated packages designed for unforgettable stays and cherished celebrations.
+          </p>
         </div>
 
         <div class="offers__grid">
           <article class="offer-card reveal reveal--fade-up" tabindex="0">
-            <div class="offer-card__img-placeholder" role="img" aria-label="Romantic honeymoon suite with rose petals"></div>
+            <div class="offer-card__img-placeholder" role="img" aria-label="Romantic honeymoon suite with rose petals">
+            </div>
             <div class="offer-card__content">
               <span class="offer-card__tag">Romance</span>
               <h3 class="offer-card__title">Honeymoon Bliss</h3>
-              <p class="offer-card__desc">Champagne on arrival, couples spa treatment, private candlelit dinner, and rose-petal turndown service.</p>
+              <p class="offer-card__desc">Champagne on arrival, couples spa treatment, private candlelit dinner, and
+                rose-petal turndown service.</p>
               <a href="#booking" class="offer-card__link">Explore Package &rarr;</a>
             </div>
           </article>
 
           <article class="offer-card reveal reveal--fade-up" tabindex="0">
-            <div class="offer-card__img-placeholder offer-card__img-placeholder--2" role="img" aria-label="Family enjoying hotel pool and garden"></div>
+            <div class="offer-card__img-placeholder offer-card__img-placeholder--2" role="img"
+              aria-label="Family enjoying hotel pool and garden"></div>
             <div class="offer-card__content">
               <span class="offer-card__tag">Family</span>
               <h3 class="offer-card__title">Family Escape</h3>
-              <p class="offer-card__desc">Connecting rooms, kid-friendly dining, dedicated activities concierge, and complimentary babysitting.</p>
+              <p class="offer-card__desc">Connecting rooms, kid-friendly dining, dedicated activities concierge, and
+                complimentary babysitting.</p>
               <a href="#booking" class="offer-card__link">Explore Package &rarr;</a>
             </div>
           </article>
 
           <article class="offer-card reveal reveal--fade-up" tabindex="0">
-            <div class="offer-card__img-placeholder offer-card__img-placeholder--3" role="img" aria-label="Couple enjoying weekend city break"></div>
+            <div class="offer-card__img-placeholder offer-card__img-placeholder--3" role="img"
+              aria-label="Couple enjoying weekend city break"></div>
             <div class="offer-card__content">
               <span class="offer-card__tag">Weekend</span>
               <h3 class="offer-card__title">Weekend Retreat</h3>
-              <p class="offer-card__desc">Two-night stay with late checkout, daily breakfast, one Michelin dinner, and curated city guide.</p>
+              <p class="offer-card__desc">Two-night stay with late checkout, daily breakfast, one Michelin dinner, and
+                curated city guide.</p>
               <a href="#booking" class="offer-card__link">Explore Package &rarr;</a>
             </div>
           </article>
 
           <article class="offer-card reveal reveal--fade-up" tabindex="0">
-            <div class="offer-card__img-placeholder offer-card__img-placeholder--4" role="img" aria-label="Corporate meeting in luxury conference room"></div>
+            <div class="offer-card__img-placeholder offer-card__img-placeholder--4" role="img"
+              aria-label="Corporate meeting in luxury conference room"></div>
             <div class="offer-card__content">
               <span class="offer-card__tag">Corporate</span>
               <h3 class="offer-card__title">Executive Boardroom</h3>
-              <p class="offer-card__desc">Full-day conference suite, gourmet catering, AV support, and dedicated event coordinator.</p>
+              <p class="offer-card__desc">Full-day conference suite, gourmet catering, AV support, and dedicated event
+                coordinator.</p>
               <a href="#booking" class="offer-card__link">Explore Package &rarr;</a>
             </div>
           </article>
@@ -602,8 +722,12 @@
         <div class="about__content reveal reveal--fade-up">
           <span class="section-header__tag section-header__tag--gold">Our Story</span>
           <h2 class="about__heading" id="about-heading">A Legacy of <br>Timeless Hospitality</h2>
-          <p class="about__desc">Founded in 1923 within a meticulously restored 19th-century Parisian manor, Auberge Céleste has welcomed discerning travelers for over a century. What began as a family passion project has evolved into one of Europe's most celebrated luxury boutique hotels.</p>
-          <p class="about__desc">Our philosophy rests on three pillars: impeccable service, design authenticity, and environmental stewardship. Every chandelier, every thread of linen, every greeting at the door is an expression of our unwavering commitment to the art of genuine hospitality.</p>
+          <p class="about__desc">Founded in 1923 within a meticulously restored 19th-century Parisian manor, Auberge
+            Céleste has welcomed discerning travelers for over a century. What began as a family passion project has
+            evolved into one of Europe's most celebrated luxury boutique hotels.</p>
+          <p class="about__desc">Our philosophy rests on three pillars: impeccable service, design authenticity, and
+            environmental stewardship. Every chandelier, every thread of linen, every greeting at the door is an
+            expression of our unwavering commitment to the art of genuine hospitality.</p>
           <div class="about__values">
             <div class="about__value">
               <span class="about__value-icon">&#10003;</span>
@@ -629,12 +753,14 @@
         <div class="section-header reveal reveal--fade-up">
           <span class="section-header__tag">Find Us</span>
           <h2 class="section-header__heading" id="location-heading">Prime Location</h2>
-          <p class="section-header__desc">Perfectly positioned in the heart of Paris, steps away from iconic landmarks and cultural treasures.</p>
+          <p class="section-header__desc">Perfectly positioned in the heart of Paris, steps away from iconic landmarks
+            and cultural treasures.</p>
         </div>
 
         <div class="location__layout reveal reveal--fade-up">
           <div class="location__map">
-            <div class="location__map-placeholder" role="img" aria-label="Map showing hotel location at 17 Avenue des Champs-Élysées, Paris">
+            <div class="location__map-placeholder" role="img"
+              aria-label="Map showing hotel location at 17 Avenue des Champs-Élysées, Paris">
               <div class="location__map-pin" aria-hidden="true">&#9733;</div>
               <span class="location__map-label">17 Av. des Champs-Élysées, 75008 Paris</span>
             </div>
@@ -678,7 +804,8 @@
         <div class="section-header reveal reveal--fade-up">
           <span class="section-header__tag">Get in Touch</span>
           <h2 class="section-header__heading" id="contact-heading">Contact & Reservations</h2>
-          <p class="section-header__desc">Our dedicated team is available 24 hours a day to assist with your inquiries and reservations.</p>
+          <p class="section-header__desc">Our dedicated team is available 24 hours a day to assist with your inquiries
+            and reservations.</p>
         </div>
 
         <div class="contact__layout reveal reveal--fade-up">
@@ -692,13 +819,15 @@
             <div class="contact__info-card">
               <span class="contact__info-icon">&#9993;</span>
               <h3 class="contact__info-title">Email</h3>
-              <a href="mailto:reservations@aubergeceleste.com" class="contact__info-link">reservations@aubergeceleste.com</a>
+              <a href="mailto:reservations@aubergeceleste.com"
+                class="contact__info-link">reservations@aubergeceleste.com</a>
               <span class="contact__info-sub">We reply within 2 hours</span>
             </div>
             <div class="contact__info-card">
               <span class="contact__info-icon">&#9733;</span>
               <h3 class="contact__info-title">WhatsApp</h3>
-              <a href="https://wa.me/12125550890" class="contact__info-link" target="_blank" rel="noopener">+1 (212) 555-0890</a>
+              <a href="https://wa.me/12125550890" class="contact__info-link" target="_blank" rel="noopener">+1 (212)
+                555-0890</a>
               <span class="contact__info-sub">Instant messaging</span>
             </div>
           </div>
@@ -708,17 +837,20 @@
             <div class="contact__form-row">
               <div class="contact__form-group">
                 <label for="contact-name" class="contact__form-label">Full Name *</label>
-                <input type="text" id="contact-name" name="name" class="contact__form-input" required aria-required="true" placeholder="Your full name">
+                <input type="text" id="contact-name" name="name" class="contact__form-input" required
+                  aria-required="true" placeholder="Your full name">
               </div>
               <div class="contact__form-group">
                 <label for="contact-email" class="contact__form-label">Email Address *</label>
-                <input type="email" id="contact-email" name="email" class="contact__form-input" required aria-required="true" placeholder="your@email.com">
+                <input type="email" id="contact-email" name="email" class="contact__form-input" required
+                  aria-required="true" placeholder="your@email.com">
               </div>
             </div>
             <div class="contact__form-row">
               <div class="contact__form-group">
                 <label for="contact-phone" class="contact__form-label">Phone Number</label>
-                <input type="tel" id="contact-phone" name="phone" class="contact__form-input" placeholder="+1 (___) ___-____">
+                <input type="tel" id="contact-phone" name="phone" class="contact__form-input"
+                  placeholder="+1 (___) ___-____">
               </div>
               <div class="contact__form-group">
                 <label for="contact-subject" class="contact__form-label">Subject</label>
@@ -734,7 +866,8 @@
             </div>
             <div class="contact__form-group">
               <label for="contact-message" class="contact__form-label">Your Message *</label>
-              <textarea id="contact-message" name="message" class="contact__form-input contact__form-textarea" required aria-required="true" rows="4" placeholder="Tell us about your inquiry..."></textarea>
+              <textarea id="contact-message" name="message" class="contact__form-input contact__form-textarea" required
+                aria-required="true" rows="4" placeholder="Tell us about your inquiry..."></textarea>
             </div>
             <button type="submit" class="btn btn--gold btn--lg contact__form-submit">Send Inquiry</button>
           </form>
@@ -748,10 +881,12 @@
         <div class="newsletter__card reveal reveal--fade-up">
           <span class="newsletter__icon" aria-hidden="true">&#9993;</span>
           <h2 class="newsletter__heading" id="newsletter-heading">Stay Inspired</h2>
-          <p class="newsletter__desc">Subscribe for exclusive offers, curated travel inspiration, and insider access to our newest experiences.</p>
+          <p class="newsletter__desc">Subscribe for exclusive offers, curated travel inspiration, and insider access to
+            our newest experiences.</p>
           <form class="newsletter__form" id="newsletter-form" aria-label="Newsletter subscription form">
             <div class="newsletter__input-wrap">
-              <input type="email" id="newsletter-email" name="email" class="newsletter__input" required aria-required="true" placeholder="Enter your email address" aria-label="Email address for newsletter">
+              <input type="email" id="newsletter-email" name="email" class="newsletter__input" required
+                aria-required="true" placeholder="Enter your email address" aria-label="Email address for newsletter">
               <button type="submit" class="btn btn--gold newsletter__submit">Subscribe</button>
             </div>
             <p class="newsletter__note">We respect your privacy. Unsubscribe anytime.</p>
@@ -772,7 +907,8 @@
             <span class="footer__logo-icon">&#10043;</span>
             <span class="footer__logo-text">Auberge Céleste</span>
           </a>
-          <p class="footer__brand-desc">A sanctuary of refined luxury in the heart of Paris. Celebrating over a century of timeless hospitality and unforgettable experiences.</p>
+          <p class="footer__brand-desc">A sanctuary of refined luxury in the heart of Paris. Celebrating over a century
+            of timeless hospitality and unforgettable experiences.</p>
           <div class="footer__awards">
             <span class="footer__award" title="Forbes Travel Guide Five-Star">&#9733; Forbes Five-Star 2026</span>
             <span class="footer__award" title="World Travel Awards">&#9733; World Travel Awards 2025</span>
@@ -845,12 +981,16 @@
       </div>
 
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2026 Auberge Céleste. All rights reserved. Crafted with passion in Paris.</p>
+        <p class="footer__copyright">&copy; 2026 Auberge Céleste. All rights reserved. Crafted with passion in Paris.
+        </p>
       </div>
     </div>
   </footer>
 
+  <!-- Smooth Scrolling (Lenis) -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js" defer></script>
   <!-- JavaScript -->
   <script src="js/main.js" defer></script>
 </body>
+
 </html>
