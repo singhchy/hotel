@@ -567,6 +567,10 @@ html {
   transform-origin: center;
 }
 
+.navbar__hamburger--active .navbar__hamburger-line {
+  background: var(--color-deep-charcoal);
+}
+
 .navbar__hamburger--active .navbar__hamburger-line:nth-child(1) {
   transform: translateY(6.5px) rotate(45deg);
 }
@@ -1464,6 +1468,7 @@ html {
 .gallery__masonry {
   columns: 3;
   column-gap: var(--space-lg);
+  transition: opacity var(--duration-base) var(--ease-out-expo), transform var(--duration-base) var(--ease-out-expo);
 }
 
 .gallery__item {
